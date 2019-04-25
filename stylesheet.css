@@ -1,0 +1,126 @@
+/* Stylesheet for Coffee Tree Café */
+
+
+
+                        
+     @font-face 		{
+						font-family: "prada";
+						src: url("fonts/prada.ttf");
+						url("fonts/prada.ttf") format("ttf"),
+						url("fonts/prada.ttf") format("opentype"),
+						url("fonts/prada.ttf") format("svg");
+						}
+						
+	
+        
+        @font-face 			{
+						font-family: "vi";
+						src: url("fonts/vi.otf");
+						url("fonts/vi.otf") format("otf"),
+						url("fonts/vi.otf") format("opentype"),
+						url("fonts/vi.otf") format("svg");
+	}
+	
+						       
+	
+	aside {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #454140;
+    overflow-x: hidden;
+    padding-top: 2%;
+    
+}
+
+aside a {
+    line-height: 2.3em;
+    text-decoration: none;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #d8d8d8;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: lowercase;
+ font-family: prada;
+    display: block;
+}
+
+
+                        
+aside a:hover { 
+    color: #618685;
+    transition:all 0.3s ease;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+
+
+aside p			{
+    					
+                       text-align: center;
+                      font-family: prada;
+                      	color: #d8d8d8;
+                      	font-size: .9em;
+                        padding: 9% 5% 3% 5%;
+                        line-height: 1.7em;
+                        letter-spacing: .01em;
+                        text-transform: lowercase;
+                        }
+    
+@media screen and (max-height: 100%) {
+  aside {padding-top: 5em;}
+  aside a {font-size: 4em;}
+}
+ 
+}
+                        
+    aside p				{
+                        font-size: 1.2em;
+                      	color: pink;
+                        padding: 3% 5% 3% 5%;
+                        line-height: 10%;
+                        letter-spacing: .05em;
+                        }
+
+  
+
+main 		{
+   		width: 80%;
+   		float: right;
+    		text-align: center;
+    		
+		}
+
+#main2 		{
+   		width: 87%;
+   		float: right;
+    		text-align: center;
+    		
+    		
+		}
+
+header	{
+	font-family: vi;
+	font-size: 3.5em;
+	font-weight: bold;
+	letter-spacing: .03em;
+	text-align: center;
+	padding-top: 2%;
+	}
+
+		
+footer	{
+	width:80%;
+	font-family: prada;
+	font-size: .9em;
+	letter-spacing: .03em;
+	color: black;
+	float: right;
+	text-align: center;
+	}

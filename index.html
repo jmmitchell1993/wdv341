@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Homepage</title>
+    
+	<!--
+	Jessica Mitchell
+	November 29, 2017
+	-->
+	
+<meta name = "description" content = "index, homepage, coffee, tree, cafe, college, student, drink">
+<meta name = "keywords" content = "coffee, drink, homepage, hangout, student">
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+	
+	.container {
+   	position: relative;
+   	text-align: center;
+   	}
+   	
+   	.centered {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	}
+	
+	div			{
+				display: inline-block;
+				}
+	
+	div.polaroid{
+ 				width: 55%;
+  				background-color: white;
+  				box-shadow: 1em 1em 1em 0 rgba(0,0,0, .5);	
+  				margin-bottom: 2%;
+				}
+
+	
+				
+	#map 		{
+        		height: 35%;
+       			width: 100%;
+       			border: thin solid black;
+       			}	
+       			
+       	.fa 	{
+  		padding: 1%;
+ 		font-size: 1.5em;
+  		width: 5%;
+ 		text-align: center;
+  		text-decoration: none;
+  		margin: 2% 6%;
+  		box-shadow: .4em .4em .4em 0 rgba(0,0,0, .5);
+		}
+
+	.fa:hover {
+    		opacity: 0.7;
+		}
+
+	.fa-facebook {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-instagram {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-pinterest {
+  		background: #484848;
+  		color: white;
+		}		
+	</style>
+</head>
+
+<body>
+
+	<aside>
+		<a href="index.html">HOME</a>
+  		<a href="about.html">ABOUT</a>
+  		<a href="menu.html">MENU</a>
+  		<a href="events.php">EVENTS</a>
+		<a href="contact.html">CONTACT</a>
+		<a href="login.php">LOGIN</a>  
+  	
+  	
+  	
+  		
+    	 <div id="map"></div>
+	 <script>
+      function initMap() {
+        var uluru = {lat: 44.901768, lng: -93.063949};
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGBM0Z4xP4A1ytfMnZ5Y4HSPx0UyE5A2M&callback=initMap">
+    </script>
+ 
+   <p>
+   <span style="text-transform: none; letter-spacing: .22em; padding-top: 4%;">604 24th St.<Br />St. Paul, Minnesota</span><Br />
+   
+   <span style="font-size: 1.7em; letter-spacing: .3em;">&#9743;</span> <span style="font-size: 1em; letter-spacing: .2em; padding-top: 3%;">702-971-1154</span></p>
+   <Br />
+   <Br />
+   <br />
+</aside>
+
+<main>
+
+<br />
+<br />
+
+
+<div class="polaroid">
+
+  <img src="images/new.jpg" alt="coffee" title="coffee" height="100%" width="100%">
+  
+
+<br />
+ <header class="container">
+  <img src="images/ring.png" alt="ring" title="ring" height="17%" width="17%">
+  <div class="centered" style="letter-spacing: .1em; font-weight: bold;">TheCoffeeTreeCafe</div>
+  </header>
+
+   
+
+</div>
+</div>
+
+</main> 
+
+<footer>
+   	<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+	<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+	<a href="https://www.pinterest.com" class="fa fa-pinterest"></a><br />
+	<span style="bottom:0; font-family: prada; letter-spacing: .1em;">M|T|W|TR 6:00 am - 10:00 pm F|S 6:00 am - 11:00 pm S 7:00 - 9:00 pm</p>
+	</footer>
+  
+  
+</body>
+</html>

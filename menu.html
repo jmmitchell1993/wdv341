@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>menu</title>
+
+	<!--
+	Jessica Mitchell
+	November 29, 2017
+	-->
+	
+<meta name = "description" content = "menu, coffee, snack, food, drinks, desert, tree"> 
+<meta name = "keywords" content = "menu, coffee, food, drink, snack, tree, web">   
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+	@font-face 			{
+						font-family: "prada";
+						src: url("fonts/prada.ttf");
+						url("fonts/prada.ttf") format("ttf"),
+						url("fonts/prada.ttf") format("opentype"),
+						url("fonts/prada.ttf") format("svg");
+						}
+
+	@font-face 			{
+						font-family: "italic";
+						src: url("fonts/italic.otf");
+						url("fonts/italic.otf") format("otf"),
+						url("fonts/italic.otf") format("opentype"),
+						url("fonts/italic.otf") format("svg");
+						}
+                
+         .container {
+   	position: relative;
+   	text-align: center;
+   	}
+   	
+   	.centered {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	}
+
+
+	.column 			{
+    					width: 30%;
+    					float: left; 
+						}
+
+	.row:after			{
+   						content: "";
+    					display: table;
+    					clear: both;
+						}
+
+
+@media (max-width: 37.5em) 	{
+    					.column {
+        				width: 100%;
+    					}
+					}
+					
+	.over				{
+						margin-left: 8%;
+						}
+	
+	.content			{
+						font-size: .8em;
+						font-family: prada;
+						line-height: 125%;
+						letter-spacing: .02em;
+						}
+						
+	h5					{
+						font-family: italic;
+						font-size: .9em;
+						letter-spacing: .1em;
+						line-height: .09%;
+						}
+
+	h1					{
+						color: black;
+						text-align: center;
+						font-family: prada;
+						font-size: 1.4em;
+						letter-spacing: .3em;
+						text-transform: lowercase;
+						padding-bottom: 2%;
+						}
+		
+	em					{
+						font-size: .9em;
+						}
+		
+	.picture			{
+						margin-left: 1em;
+						text-align: center;
+						
+						}
+	
+	#callout			{
+						color: black;
+						margin: 4% 17%;
+						text-align: center;
+						font-style: italic;
+						font-size: 1em;
+						letter-spacing: .03em;
+						border-top: .2em solid #b9b0b1;
+						border-bottom: .2em solid #b9b0b1;
+						padding: 1% 0;
+						}
+						
+	#map 		{
+        		height: 35%;
+       			width: 100%;
+       			border: thin solid black;
+       			}
+       			
+       	.fa 	{
+  		padding: 1%;
+ 		font-size: 1.5em;
+  		width: 4%;
+ 		text-align: center;
+  		text-decoration: none;
+  		margin: 2% 6%;
+  		box-shadow: .4em .4em .4em 0 rgba(0,0,0, .5);
+		}
+
+	.fa:hover {
+    		opacity: 0.7;
+		}
+
+	.fa-facebook {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-instagram {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-pinterest {
+  		background: #484848;
+  		color: white;
+		}
+						
+	</style>
+	</head>
+	
+<body>
+
+	<aside>
+  		<a href="index.html">HOME</a>
+  		<a href="about.html">ABOUT</a>
+  		<a href="menu.html">MENU</a>
+  		<a href="events.php">EVENTS</a>
+  		<a href="contact.html">CONTACT</a>
+			<a href="login.php">LOGIN</a>  
+
+  		
+    	 <div id="map"></div>
+	 <script>
+      function initMap() {
+        var uluru = {lat: 44.901768, lng: -93.063949};
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGBM0Z4xP4A1ytfMnZ5Y4HSPx0UyE5A2M&callback=initMap">
+    </script>
+ 
+   <p>
+   <span style="text-transform: none; letter-spacing: .22em; padding-top: 4%;">604 24th St.<Br />St. Paul, Minnesota</span><Br />
+   
+   <span style="font-size: 1.7em; letter-spacing: .3em;">&#9743;</span> <span style="font-size: 1em; letter-spacing: .2em; padding-top: 3%;">702-971-1154</span></p>
+   <Br />
+   <Br />
+   <br />
+       
+	</aside>
+
+<div id="main2">
+
+<header class="container" style="margin-left: 7%">
+  <img src="images/ring.png" alt="ring" title="ring" height="9%" width="9%">
+  <div class="centered">Bon Appetit</div>
+  </header>
+  
+<div class="column over">
+
+	<h1>|Beverages|</h1>
+
+	<h5>Coffee</h5> 
+	<p class="content">Fresh Roasted Coffee, Mocha Latte,<br />
+	 Hot Chocolate, Chai Tea, Frappe</p>
+
+	<h5>Bottled Beer</h5> 
+ 	<p class="content">Budwiser, Bud Light, Coors,<br/> Coors Light, Blue Moon, Exile Ruthie,<br /> 					             		 		     Firetrucker Tropical Burn</p>
+
+	<h5>Wine</h5> 
+	<p class="content">Chardonnay, Pinot Grigio, Merlot, <br />Cabernet, Sauvingnon</p>
+	
+	<br />
+
+	<img src="images/bakery.jpg" alt="bakery" title="bakery" class="picture" width="60%" height="60%">	
+
+</div>
+  
+<div class="column">
+
+    <h1>|Sandwiches|</h1>
+   
+    <h5>Grilled Vegetable Panini</h5>
+  	<p class="content">Tomato, onion, cucumber, romaine lettuce,
+  	muenster cheese and basil pesto. Grilled and served on multigrain panini bread<br/>
+  	(Make it a wrap for FREE)<br/>
+  	<em>$6.99</em></p>
+  	
+  	<h5>East Street Chicken Salad</h5>
+	<p class="content">Our FAMOUS chicken salad topped with swiss cheese, artisan leaf lettuce, ripe tomato & served on a croissant<br />
+	<em>$6.99</em></p>
+
+	<h5>Black Russian Reuben</h5>
+	<p class="content">Toasted black Russian bagel filled with pastrami, swiss cheese, sauerkraut & thousand island dressing<br />
+	<em>$6.99</em></p>
+
+	<h5>Key City Ham Panini</h5>
+	<p class="content">Ham, smoked gouda cheese, sliced apple, onion & sweet chutney served grilled on multigrain panini bread<br />
+	<em>$6.99</em></p>
+
+	<h5>Black Bean Burger</h5>
+	<p class="content">Topped with cheddar cheese, lettuce, tomato, onion & southwest ranch dressing on a grilled ciabatta square<br />
+	<em>$6.99</em></p>
+
+	<h5>Panini Italiano</h5>
+	<p class="content">Fresh mozzarella, ripe tomatoes, basil pesto & balsamic glaze grilled on multigrain panini bread<br />
+	<em>$6.99</em></p>
+
+	<h5>The Grilled Tuna Salad Panini</h5>
+	<p class="content">House tuna salad, sprouts & cheddar cheese grilled on multigrain panini bread or sourdough bread<br />
+	<em>$6.99</em></p>
+	
+</div>
+
+<div class="column">
+
+ 	<h1>|Soup|</h1>
+	
+  	<h5>Signature Soup</h5>
+	<p class="content">Our famous roasted red pepper & gouda</p>
+
+	<p class="content">Soup of the Day Always changing,<br />
+	timed for the season & great with a<br />
+	salad or sandwich</p>
+	<p class="content"><strong>Bowl:</strong> <em>$4.99</em><br />
+	<strong>Cup:</strong> <em>$3.99</em></p>
+
+	<h5>Soup & Sandwich</h5>
+	<p class="content">Choice of soup & half sandwich<br />
+	<em>$7.29</em></p>
+
+	<h5>Soup & Salad</h5>
+	<p class="content">Choice of soup & any half salad<br />
+	<em>$7.29</em></p> 
+	
+	<br />
+
+	<h1>|Treats|</h1>
+	
+	<p class="content">Yogurt, Muffins, Pastries, Quiche, <br />
+	Cigars & Strudel Iced Cinnamon Rolls</p>
+	Enjoy the EVER Changing <br />
+	& always tasty BAKERY CASE!<br />
+	
+	<br />
+	<br />
+
+<div id="callout">
+
+	<p style="font-style: italic; font-size: 1.1em; letter-spacing: .1em;">ORDER AHEAD FOR<br />RAPID PICK-UP</p>
+	<p style="font-size: .95em; font-weight: bold; letter-spacing: .1em;">702-971-1154</p>
+	
+</div>
+
+	<br />
+	<br /> 
+
+</div>
+</div>
+  
+   	<footer>
+   	<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+	<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+	<a href="https://www.pinterest.com" class="fa fa-pinterest"></a><br />
+	<span style="bottom:0; font-family: prada; letter-spacing: .1em;">M|T|W|TR 6:00 am - 10:00 pm F|S 6:00 am - 11:00 pm S 7:00 - 9:00 pm</p>
+	</footer>
+   
+</body>
+</html>

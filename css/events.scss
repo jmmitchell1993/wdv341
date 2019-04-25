@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'vi';
+    src: url('../fonts/vi.otf');
+}	
+  
+.title-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+header	{
+	font-family: vi;
+	font-size: 3.5em;
+	letter-spacing: .03em;
+	text-align: center;
+}
+    
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-below {
+    font-family: helvetica;
+    font-size: 23px;
+    letter-spacing: .2px;
+    display: block;
+    margin-top: -10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: helvetica;
+}
+
+.errMsg {
+    text-align: center;
+    font-size: 18px;
+    font-family: helvetica;
+    // background-color: #ca2c2c;
+    color: #ca2c2c;
+    // // padding: 16px;
+    // width: 40%;
+    // margin: auto;
+}
+
+.admin-options {
+    padding: 1px 20px;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+
+    .nav-login {
+        display: block;
+        padding: 5px 0;
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+            margin: 10px auto;
+            width: 80%;
+        }
+    }
+}
+
+.login-form {
+    text-align: center;
+    font-family: helvetica;
+    
+    input {
+        width: 13%;
+        padding: 5px;
+    }
+}
+
+.btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-family: helvetica;
+    border-radius: 5px;
+    border: none;
+    background-color: antiquewhite;
+    letter-spacing: 0.45px;
+    width: auto;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+
+    ul {
+        display: inline-flex;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 0 10px;
+
+        a {
+            text-decoration: none;
+            font-family: helvetica;
+            font-size: 20px;
+            color: black;
+
+            &:hover {
+                font-weight: bold;
+                color: #008B8B;
+            }
+        }
+    }
+}
+
+p {
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+    font-family: helvetica;
+    border: none;
+
+    input, textarea {
+        width: 30%;
+        text-align: center;
+        padding: 7px;
+        font-family: helvetica;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+}
+
+.evt_name {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.eventBlock {
+    padding: 20px;
+    line-height: 1.5;
+    width: 50%;
+    margin: auto;
+    font-family: helvetica;
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding: 6px 0;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}

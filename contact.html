@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CONTACT</title>
+    
+	<!--
+	Jessica Mitchell
+	November 29, 2017
+	-->
+	
+<meta name = "description" content = "contact, connect, talk, coffee, tree">
+<meta name = "keywords" content = "contact, send, talk, submit, coffee, tree, cafe">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+	@font-face 				{
+							font-family: "prada";
+							src: url("fonts/prada.ttf");
+							url("fonts/prada.ttf") format("ttf"),
+							url("fonts/prada.ttf") format("opentype"),
+							url("fonts/prada.ttf") format("svg");
+							}
+							
+	.container {
+   	position: relative;
+   	text-align: center;
+   	}
+   	
+   	.centered {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	}
+						
+	form					{
+							width: 50%;
+							background-image: url("images/contact.png");
+							background-size: 100% 100%;
+   							background-color: #cccccc;
+							padding: 2% 5% 2% 2%;
+							margin: 0 auto;
+							box-shadow: .7em .7em .7em 0 rgba(0,0,0, .5);
+							}
+	
+	fieldset				{
+							border: none;
+							}
+
+	.labelfloatleft	label	{
+							width: 30%;
+							text-align: right;
+							margin-right: .6em;
+							float: left;
+							}
+					
+	.labelfloatleft input	{
+							display: block;
+							}
+						
+	.clear					{
+							clear: both;
+							}
+							
+	.label2					{
+							display: block;
+							padding-top: .9em;
+							}
+							
+	label					{
+							font-family: prada;
+							font-size: .9em;
+							font-weight: bold;
+							letter-spacing: .1em;
+							}
+	textarea				{
+							display: block;
+							}
+	
+	select					{
+							display: block;
+							}
+							
+input[type=submit], input[type=reset] {	
+							color: #ae6661;		
+							display: inline;
+							font-family: prada;
+							font-size: .7em;
+							font-weight: bold;
+							letter-spacing: .03em;
+							}
+					
+	input[type=submit]:hover{
+							color: #618685;
+							}
+	
+	input[type=reset]:hover	{
+							color: #618685;
+							}	
+							
+	#map 		{
+        		height: 35%;
+       			width: 100%;
+       			border: thin solid black;
+       			}
+       			
+       	.fa 	{
+  		padding: 1%;
+ 		font-size: 1.5em;
+  		width: 5%;
+ 		text-align: center;
+  		text-decoration: none;
+  		margin: 2% 6%;
+  		box-shadow: .4em .4em .4em 0 rgba(0,0,0, .5);
+		}
+
+	.fa:hover {
+    		opacity: 0.7;
+		}
+
+	.fa-facebook {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-instagram {
+  		background: #484848;
+  		color: white;
+		}
+
+	.fa-pinterest {
+  		background: #484848;
+  		color: white;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<aside>
+	<a href="index.html">HOME</a>
+  		<a href="about.html">ABOUT</a>
+  		<a href="menu.html">MENU</a>
+  		<a href="events.php">EVENTS</a>
+		<a href="contact.html">CONTACT</a>
+		<a href="login.php">LOGIN</a>  
+
+  		
+  		
+    	 <div id="map"></div>
+	 <script>
+      function initMap() {
+        var uluru = {lat: 44.901768, lng: -93.063949};
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGBM0Z4xP4A1ytfMnZ5Y4HSPx0UyE5A2M&callback=initMap">
+    </script>
+ 
+   <p>
+   <span style="text-transform: none; letter-spacing: .22em; padding-top: 4%;">604 24th St.<Br />St. Paul, Minnesota</span><Br />
+   
+   <span style="font-size: 1.7em; letter-spacing: .3em;">&#9743;</span> <span style="font-size: 1em; letter-spacing: .2em; padding-top: 3%;">702-971-1154</span></p>
+   <Br />
+   <Br />
+   <br />
+	</aside>
+	
+<main>
+
+	 <header class="container">
+  <img src="images/ring.png" alt="ring" title="ring" height="9%" width="9%">
+  <div class="centered">Contact Us</div>
+  </header>
+<br />
+	<form id="contact" name="contact" method="post" action="">
+		<fieldset class ="labelfloatleft">
+			
+			
+		<label for= "firstname">First Name: </label>
+		<input type="textbox" name="firstname" id="firstname" size="40" />
+			
+		<br />
+		
+		<label for="lastname">Last Name: </label>
+		<input type="textbox" name="lastname" id="lastname" size="40" />
+			
+		<br />
+		
+		<label for="staddress">Street Address: </label>
+		<input type="textbox" name="staddress" id="staddress" size="40" />
+		
+		<br />
+			
+		<label for="city">City: </label>
+		<input type="textbox" name="city" id="city" size ="40" />
+		
+		<br />
+		
+		<label for="state">State: </label>
+		<select name="state" id="state" size="1" />
+			<option value="IA">Iowa </option>
+			<option value="MN">Minnesota </option>
+			<option value="NE">Nebraska </option>
+		</select>
+		
+		<br />
+		
+		<label for="zip" class="clear">Zip: </label>
+		<input type="textbox" name="zip" id="zip" size="5" />
+			
+		<br />
+		
+		<label for="email">Email: </label>
+		<input type="textbox" name="email" id="email" size="40" placeholder="email@anywhere.com" />
+			
+		<br />
+		
+		<label for="comments" class="label2">Comments:</label>
+		<textarea name="comments" id="comments" rows="10" cols="40"/>
+			
+		</textarea>
+	</fieldset>
+		
+		<br />
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+			
+</form>
+
+<br />
+<br />
+ 
+</main>
+<footer style="bottom: 0; margin-left: 45%;">
+   	<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+	<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+	<a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+	<Br />
+	<span style="bottom:0; font-family: prada; letter-spacing: .1em;">M|T|W|TR 6:00 am - 10:00 pm F|S 6:00 am - 11:00 pm S 7:00 - 9:00 pm</p>
+	</footer>
+   
+
+
+</body>
+</html>
