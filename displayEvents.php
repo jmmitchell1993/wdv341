@@ -69,11 +69,7 @@ session_start();
   	
         
 	</main>
-    
-	<footer>
-    	<p>Copyright &copy; <script> var d = new Date(); document.write (d.getFullYear());</script> All Rights Reserved</p>
-    
-    </footer>
+   
 
 
 

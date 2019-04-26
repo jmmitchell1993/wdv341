@@ -80,7 +80,7 @@ if ($_SESSION['validUser'] !== "yes") {
                     <div class="row">
                     	<?php $event_id=$row['event_id'];	//put event_id into a variable for further processing  ?>
                     	<a href='updateEvent.php?recId=<?php echo $event_id; ?>'><button class="btn">Update</button></a>
-                        <a href='deleteEvent.php?recId=<?php echo $event_id; ?>'><input class="btn btn-delete" type="button" value="Delete"></a>
+                        <a href='deleteEvent.php?recId=<?php echo $event_id; ?>'><button class="btn btn-delete">Delete</button></a>
                     </div>                
 				</div><!-- Close Event Block -->
         <?php
